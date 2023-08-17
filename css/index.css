@@ -1,4 +1,49 @@
-body {
-  background-color: rgb(255, 255, 255);
-  opacity: 50%;
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#n1 {
+  height: 15%;
+}
+
+#i1 {
+  border-radius: 150%;
+  font-family: c;
+}
+
+#t1 {
+  padding-left: 20px;
+  font-family: "Lobster", cursive;
+  font-size: xxx-large;
+}
+
+#ab0:hover {
+  background-color: #ffffff;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+#ab1:hover {
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+#ab2:hover {
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
+}
+
+#ab3:hover {
+  background-color: white;
+  border-radius: 30%;
+  padding: 15px;
 }
