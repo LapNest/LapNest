@@ -1,0 +1,29 @@
+.bgc {
+  background-color: #5356ff;
+}
+.icon {
+  clip-path: circle(50% at 50% 50%);
+  height: 50px;
+  width: 50px;
+}
+.item0 {
+  font-size: 1.25rem;
+  margin: 10px;
+}
+.item0:hover {
+  transform: scale(1.5);
+}
+.menubtn {
+  border-color: #71b6ff;
+  /*
+      * Created with https://www.css-gradient.com
+      * Gradient link: https://www.css-gradient.com/?c1=71b6ff&c2=68c7e3&gt=l&gd=dtr
+      */
+  background: #71b6ff;
+  background: linear-gradient(225deg, #71b6ff, #68c7e3);
+}
+@media (max-width: 991.98px) {
+  .item0:hover {
+    transform: none;
+  }
+}

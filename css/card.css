@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+}
+.card-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #212529;
+  margin-bottom: 10px;
+}
+.card-img-top {
+  padding: 10px;
+  width: 100%;
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  background-color: #67c6e3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.body0 {
+  background-color: #dff5ff;
+  margin-top: 20px;
+  height: calc(100vh - 110px);
+}
+.bodypart0 {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .bodypart0 {
+    margin-top: 20%;
+  }
+  .bodypart1 {
+    background-color: white;
+  }
+  #himg {
+    margin-top: 132px;
+    height: 500px;
+    width: 360px;
+  }
+}

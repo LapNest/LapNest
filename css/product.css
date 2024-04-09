@@ -1,0 +1,41 @@
+.c0 {
+  margin-top: 5px;
+}
+.c1 {
+  text-align: center;
+  border: 1px solid black;
+  height: auto;
+}
+.i1 {
+  margin: 20% 5%;
+  width: 80%;
+  height: auto;
+}
+.c2 {
+  border: 1px solid black;
+  overflow-y: auto;
+}
+#add {
+  padding: 10px;
+  background-color: #67c6e3;
+  font-size: 40px;
+  height: auto;
+  width: 80%;
+}
+.product-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+}
+.detail-label {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .i1 {
+    margin: 10% 0;
+  }
+  #add {
+    margin-bottom: 4px;
+  }
+}

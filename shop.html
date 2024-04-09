@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="css/card.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bgc">
+      <div class="container-fluid">
+        <img src="Lapnest.png" alt="icon" class="icon" />
+        <a class="navbar-brand" href="#">
+          <div class="container-fluid">
+            <img
+              src="name.png"
+              alt="Lapnest"
+              id="name"
+              width="150px"
+              height="auto"
+            />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler menubtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link active text-white item0"
+              aria-current="page"
+              href="home.html"
+              >Home</a
+            >
+            <a
+              class="nav-link active text-white item0"
+              aria-current="page"
+              href="shop.html"
+              >Shop</a
+            >
+            <a
+              class="nav-link active text-white item0"
+              aria-current="page"
+              href="cart.html"
+              >Cart
+            </a>
+            <a
+              class="nav-link active text-white item0"
+              aria-current="page"
+              href="contact.html"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container c0">
+      <div class="container c1">
+        <ul>
+          <li>
+            <a href="#" class="redirect-link" data-target="apple0">
+              <img src="companies/apple.png" alt="Apple" />
+              <p class="company-name li1">Apple</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="redirect-link" data-target="asus0">
+              <img src="companies/asus.png" alt="Asus" />
+              <p class="company-name li1">Asus</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="redirect-link" data-target="dell0">
+              <img src="companies/dell.png" alt="Dell" />
+              <p class="company-name li1">Dell</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="redirect-link" data-target="hp0">
+              <img src="companies/hp.png" alt="HP" />
+              <p class="company-name li1">HP</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="redirect-link" data-target="msi0">
+              <img src="companies/mis.png" alt="MSI" />
+              <p class="company-name li1">MSI</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="container apple0">
+        <div class="c1as">
+          <h2>Apple</h2>
+        </div>
+        <br />
+        <div class="row">
+          <!-- First card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/apple/a1.webp"
+                class="card-img-top"
+                alt="Apple 2020 Macbook Air Apple M1"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Apple 2020 Macbook Air Apple M1</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab1" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/apple/a2.webp"
+                class="card-img-top"
+                alt="Apple 2022 MacBook AIR Apple M2"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Apple 2022 MacBook AIR Apple M2</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab2" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/apple/a3.webp"
+                class="card-img-top"
+                alt="Apple MacBook Air Apple M3"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Apple MacBook Air Apple M3</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab3" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/apple/a4.webp"
+                class="card-img-top"
+                alt="Apple MacBook Pro Intel Core i5 8th Gen"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  Apple MacBook Pro Intel Core i5 8th Gen
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab4" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/apple/a5.webp"
+                class="card-img-top"
+                alt="Apple 2023 MacBook Pro Apple M3 Max"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Apple 2023 MacBook Pro Apple M3</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab5" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/apple/a6.webp"
+                class="card-img-top"
+                alt="Apple 2023 MacBook Pro Apple M3 pro"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Apple 2023 MacBook Pro Apple M3 pro</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="ab6" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container asus0">
+        <div class="c1as">
+          <h2>Asus</h2>
+        </div>
+        <br />
+        <div class="row">
+          <!-- First card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/asus/asus1.webp"
+                class="card-img-top"
+                alt="ASUS ROG Zephyrus G14 GA402XU-N2044WS Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS ROG Zephyrus G14 GA402XU-N2044WS Gaming Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb1" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/asus/asus2.webp"
+                class="card-img-top"
+                alt="ASUS ZenBook 13 UX331UAL-EG002T Intel Core i5 8th Gen 8250U Ultra Slim Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS ZenBook 13 UX331UAL-EG002T Intel Core i5 8th Gen 8250U
+                  Ultra Slim Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb2" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/asus/asus3.webp"
+                class="card-img-top"
+                alt="ASUS Vivobook 15 X515EA-EJ312W Intel Core i3 11th Gen 1115G4 Thin and Light Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS Vivobook 15 X515EA-EJ312W Intel Core i3 11th Gen 1115G4
+                  Thin Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb3" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/asus/asus4.webp"
+                class="card-img-top"
+                alt="ASUS TUF Gaming F15 FX506HF-HN075W AI Powered Gaming Intel Core i5 11th Gen 11260H Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS TUF F15 FX506HF-HN075W AI Powered Intel Core i5 11th Gen
+                  11260H Gaming Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb4" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/asus/asus5.webp"
+                class="card-img-top"
+                alt="ASUS Chromebook C214MA-BU0452 Flip Chromebook Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS Chromebook C214MA-BU0452 Intel Celeron Dual Core N4020
+                  Flip Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb5" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/asus/asus6.webp"
+                class="card-img-top"
+                alt="ASUS VivoBook TP470EZ-EC033TS Intel Core i5 11th Gen 1135G7 Flip 14 2 in 1 Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  ASUS VivoBook TP470EZ-EC033TS Intel Core i5 11th Gen 1135G7
+                  Flip 14 2 in 1 Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="asb6" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container dell0">
+        <div class="c1as">
+          <h2>Dell</h2>
+        </div>
+        <br />
+        <div class="row">
+          <!-- First card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/dell/d1.webp"
+                class="card-img-top"
+                alt="Dell Inspiron 15 3000 Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Dell Inspiron 15 3000 Laptop</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d1" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/dell/d2.webp"
+                class="card-img-top"
+                alt="Dell XPS 13 7390 13.3-inch Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Dell XPS 13 7390 13.3-inch Laptop</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d2" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/dell/d3.webp"
+                class="card-img-top"
+                alt="Dell Alienware m15 R7 Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Dell Alienware m15 R7 Gaming Laptop</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d3" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/dell/d4.webp"
+                class="card-img-top"
+                alt="Dell XPS 13 9320 13.4-inch Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">Dell XPS 13 9320 13.4-inch Laptop</h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d4" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/dell/d5.webp"
+                class="card-img-top"
+                alt="DELL G15 5511 15.6-inch Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  DELL G15 5511 15.6-inch Gaming Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d5" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/dell/d6.webp"
+                class="card-img-top"
+                alt="Dell Latitude 3420 14-inch Business Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  Dell Latitude 3420 14-inch Business Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="d6" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container hp0">
+        <div class="c1as">
+          <h2>HP</h2>
+        </div>
+        <br />
+        <div class="row">
+          <!-- First card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/hp/hp1.webp"
+                class="card-img-top"
+                alt="HP Pavilion 15-eg3018TU 15.6-inch FHD Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP Pavilion 15-eg3018TU 15.6-inch FHD Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h1" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/hp/hp2.webp"
+                class="card-img-top"
+                alt="HP 15s Intel Core i3 12th Gen 1215U 15.6 Inch Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP 15s Intel Core i3 12th Gen 1215U 15.6 Inch Laptops
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h2" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/hp/hp3.webp"
+                class="card-img-top"
+                alt="HP AMD Ryzen 5 Hexa Core 5500U 15s- eq2144au"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP AMD Ryzen 5 Hexa Core 5500U 15s- eq2144au
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h3" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/hp/hp4.webp"
+                class="card-img-top"
+                alt="HP Envy x360 Creator OLED Eyesafe Evo Intel Core i5 12th Gen 1230U"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP Envy x360 Creator OLED Eyesafe Evo Intel Core i5 12th Gen
+                  1230U
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h4" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/hp/hp5.webp"
+                class="card-img-top"
+                alt="HP Omen Intel Core i7 12th Gen 12800HX 17-ck1022TX Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP Omen Intel Core i7 12th Gen 12800HX 17-ck1022TX Gaming
+                  Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h5" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/hp/hp6.webp"
+                class="card-img-top"
+                alt="HP Intel Celeron Dual Core N4500 15a-na0008TU Chromebook"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  HP Intel Celeron Dual Core N4500 15a-na0008TU Chromebook
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="h6" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container msi0">
+        <div class="c1as">
+          <h2>MSI</h2>
+        </div>
+        <br />
+        <div class="row">
+          <!-- First card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/msi/msi1.webp"
+                class="card-img-top"
+                alt="MSI Katana 17 Intel Core i7 12th Gen 12650H Katana 17 B12VFK-668IN Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI Katana 17 Intel Core i7 12th Gen 12650H B12VFK-668IN
+                  Gaming Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m1" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/msi/msi2.webp"
+                class="card-img-top"
+                alt="MSI Sword 15 A12UD-471IN Intel Core i5 12th Gen 12500H Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI Sword 15 A12UD-471IN Intel Core i5 12th Gen 12500H Gaming
+                  Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m2" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="companies/msi/msi3.webp"
+                class="card-img-top"
+                alt="MSI Cyborg 15 AI A1VEK-050IN Intel Core Ultra 7 155H Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI Cyborg 15 AI A1VEK-050IN Intel Core Ultra 7 155H Gaming
+                  Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m3" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/msi/msi4.webp"
+                class="card-img-top"
+                alt="MSI GP76 Leopard 11UG-609IN Intel Core i7 11th Gen 11800H Gaming Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI GP76 Leopard 11UG-609IN Intel Core i7 11th Gen 11800H
+                  Gaming Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m4" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fifth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/msi/msi5.webp"
+                class="card-img-top"
+                alt="MSI Summit E16Flip A13VET-068IN Intel Core i7 13th Gen 1360P Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI Summit E16Flip A13VET-068IN Intel Core i7 13th Gen 1360P
+                  Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m5" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sixth card -->
+          <div class="col-md-4">
+            <div class="card">
+              <!-- Replace src, alt, and content as needed -->
+              <img
+                src="companies/msi/msi6.webp"
+                class="card-img-top"
+                alt="MSI Prestige 14 A10RAS-097IN Intel Core i7 10th Gen 10510U Laptop"
+                width="280px"
+                height="200px"
+              />
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  MSI Prestige 14 A10RAS-097IN Intel Core i7 10th Gen 10510U
+                  Laptop
+                </h5>
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="btn btn-primary">Add</button>
+                  <button id="m6" type="button" class="btn btn-primary">
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("ab1").addEventListener("click", function () {
+        window.open("a1.html", "_blank");
+      });
+      document.getElementById("ab2").addEventListener("click", function () {
+        window.open("a2.html", "_blank");
+      });
+      document.getElementById("ab3").addEventListener("click", function () {
+        window.open("a3.html", "_blank");
+      });
+      document.getElementById("ab4").addEventListener("click", function () {
+        window.open("a4.html", "_blank");
+      });
+      document.getElementById("ab5").addEventListener("click", function () {
+        window.open("a5.html", "_blank");
+      });
+      document.getElementById("ab6").addEventListener("click", function () {
+        window.open("a6.html", "_blank");
+      });
+
+      document.getElementById("asb1").addEventListener("click", function () {
+        window.open("asus1.html", "_blank");
+      });
+      document.getElementById("asb2").addEventListener("click", function () {
+        window.open("asus2.html", "_blank");
+      });
+      document.getElementById("asb3").addEventListener("click", function () {
+        window.open("asus3.html", "_blank");
+      });
+      document.getElementById("asb4").addEventListener("click", function () {
+        window.open("asus4.html", "_blank");
+      });
+      document.getElementById("asb5").addEventListener("click", function () {
+        window.open("asus5.html", "_blank");
+      });
+      document.getElementById("asb6").addEventListener("click", function () {
+        window.open("asus6.html", "_blank");
+      });
+
+      document.getElementById("d1").addEventListener("click", function () {
+        window.open("d1.html", "_blank");
+      });
+      document.getElementById("d2").addEventListener("click", function () {
+        window.open("d2.html", "_blank");
+      });
+      document.getElementById("d3").addEventListener("click", function () {
+        window.open("d3.html", "_blank");
+      });
+      document.getElementById("d4").addEventListener("click", function () {
+        window.open("d4.html", "_blank");
+      });
+      document.getElementById("d5").addEventListener("click", function () {
+        window.open("d5.html", "_blank");
+      });
+      document.getElementById("d6").addEventListener("click", function () {
+        window.open("d6.html", "_blank");
+      });
+
+      document.getElementById("h1").addEventListener("click", function () {
+        window.open("h1.html", "_blank");
+      });
+      document.getElementById("h2").addEventListener("click", function () {
+        window.open("h2.html", "_blank");
+      });
+      document.getElementById("h3").addEventListener("click", function () {
+        window.open("h3.html", "_blank");
+      });
+      document.getElementById("h4").addEventListener("click", function () {
+        window.open("h4.html", "_blank");
+      });
+      document.getElementById("h5").addEventListener("click", function () {
+        window.open("h5.html", "_blank");
+      });
+      document.getElementById("h6").addEventListener("click", function () {
+        window.open("h6.html", "_blank");
+      });
+
+      document.getElementById("m1").addEventListener("click", function () {
+        window.open("m1.html", "_blank");
+      });
+      document.getElementById("m2").addEventListener("click", function () {
+        window.open("m2.html", "_blank");
+      });
+      document.getElementById("m3").addEventListener("click", function () {
+        window.open("m3.html", "_blank");
+      });
+      document.getElementById("m4").addEventListener("click", function () {
+        window.open("m4.html", "_blank");
+      });
+      document.getElementById("m5").addEventListener("click", function () {
+        window.open("m5.html", "_blank");
+      });
+      document.getElementById("m6").addEventListener("click", function () {
+        window.open("m6.html", "_blank");
+      });
+    </script>
+  </body>
+</html>
