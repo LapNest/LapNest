@@ -1,0 +1,45 @@
+body {
+  background-color: #dff5ff;
+}
+.c0 {
+  margin-top: 1%;
+  border: 2px solid black;
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
+}
+.c1 {
+  padding: 3px;
+}
+hr {
+  border: 2px solid black;
+}
+.c3 img {
+  text-align: center;
+  height: 150px;
+  margin: 2%;
+}
+.pic {
+  border: 1px solid black;
+}
+.xyz {
+  margin-bottom: 2px;
+}
+#pto {
+  margin-left: 45%;
+  margin-bottom: 2%;
+  background-color: #378ce7;
+  color: #f8f1bd;
+}
+@media (min-width: 426px) {
+  .pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  .info {
+    padding: 3%;
+    font-weight: 500;
+  }
+}

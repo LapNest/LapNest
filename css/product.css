@@ -39,3 +39,21 @@
     margin-bottom: 4px;
   }
 }
+
+#nam {
+  color: white;
+  font-size: 2px;
+  margin-bottom: 3px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#cm {
+  color: white;
+  font-size: 2px;
+  margin-bottom: 3px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

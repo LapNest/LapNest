@@ -28,3 +28,9 @@
   margin: 4px 2px;
   cursor: pointer;
 }
+
+#nam {
+  background-color: blueviolet;
+  color: white;
+  font-size: 30px;
+}

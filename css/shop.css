@@ -4,7 +4,8 @@ body {
 .c0 {
   border: 1px solid black;
   margin-top: 10px;
-  height: fit-content;
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
 }
 .c1 {
   border: 1px solid black;

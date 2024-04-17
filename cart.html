@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/cart.css" />
     <title>cart</title>
   </head>
   <body>
@@ -73,5 +74,144 @@
         </div>
       </div>
     </nav>
+
+    <div class="container c0">
+      <h2>Cart</h2>
+      <hr />
+      <div class="c1" id="cartItems"></div>
+      <a
+        id="pto"
+        class="btn btn-primary"
+        data-bs-toggle="collapse"
+        href="#def"
+        role="button"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        Place Order
+      </a>
+      <div id="def" class="collapse">
+        <div class="card card-body">
+          <h3>Enter your details</h3>
+          <form
+            id="orderForm"
+            action="https://script.google.com/macros/s/AKfycbwcM76CRAHtX0U4bo-SMZs1rOIeP6ROU0tJMycrImp2Tt4VpY38RwpclqsaITI9Yu_N/exec"
+            method="post"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="orders" class="form-label">Orders:</label>
+              <textarea
+                class="form-control"
+                id="orders"
+                name="orders"
+                rows="3"
+                readonly
+                required
+              ></textarea>
+            </div>
+            <button type="submit" id="i1" class="btn btn-primary">Place</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+      function generateProductCard(product) {
+        return `
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="row c3">
+              <div class="col-lg-4 col-md-8 col-sm-12 pic">
+                <img src="companies/${product.cm}.webp" alt="" />
+              </div>
+              <div class="col-lg-8 col-md-6 col-sm-12 info">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text xyz">Quantity : ${product.quantity} </p>
+                <p class="card-text">Price: ${product.price}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        `;
+      }
+
+      function renderProductCards() {
+        const cartItemsContainer = document.getElementById("cartItems");
+        cartItemsContainer.innerHTML = "";
+
+        cartItems.forEach((item) => {
+          const cardHtml = generateProductCard(item);
+          cartItemsContainer.innerHTML += cardHtml;
+        });
+      }
+
+      // Render product cards when the page loads
+      window.addEventListener("DOMContentLoaded", renderProductCards);
+
+      function generateOrdersString() {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        let ordersString = "";
+        cartItems.forEach((item) => {
+          ordersString += `Name : ${item.name}\n Quantity : ${item.quantity}\n`;
+        });
+        return ordersString.trim(); // Remove trailing newline
+      }
+
+      document.getElementById("orders").value = generateOrdersString();
+
+      let form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(document.getElementById("orderForm")),
+        })
+          .then((response) => {
+            // Check if the response is successful before opening the cart page
+            if (response.ok) {
+              console.log("IH");
+              window.open("home.html", "_self");
+            } else {
+              // Handle errors if necessary
+              alert("HI;");
+              console.error("Error submitting form:", response.statusText);
+            }
+          })
+          .catch((error) => {
+            alert("byf");
+            console.error("Error submitting form:", error);
+          });
+      });
+    </script>
   </body>
 </html>
