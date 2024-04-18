@@ -2,7 +2,7 @@ body {
   background-color: #dff5ff;
 }
 .c0 {
-  border: 1px solid black;
+  border: 2px solid black;
   margin-top: 10px;
   height: calc(100vh - 110px);
   overflow-y: scroll;
