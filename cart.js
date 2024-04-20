@@ -89,6 +89,9 @@ document.getElementById("orders").value = generateOrdersString();
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  document.getElementById("scr").innerHTML =
+    'Placing<div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span></div>';
+
   fetch(form.action, {
     method: "POST",
     body: new FormData(document.getElementById("orderForm")),
@@ -96,17 +99,17 @@ form.addEventListener("submit", (e) => {
     .then((response) => {
       // Check if the response is successful before opening the cart page
       if (response.ok) {
-        console.log("IH");
+        console.log("Success");
+        localStorage.clear();
         window.open("home.html", "_self");
       } else {
         // Handle errors if necessary
-        alert("HI;");
+        alert("PLease try again");
         console.error("Error submitting form:", response.statusText);
       }
     })
     .catch((error) => {
-      alert("byf");
+      alert("Please try again");
       console.error("Error submitting form:", error);
     });
-  localStorage.clear();
 });
