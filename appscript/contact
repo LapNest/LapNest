@@ -1,0 +1,17 @@
+const sheets = SpreadsheetApp.openByUrl(
+  "https://docs.google.com/spreadsheets/d/12pEHupict47T9y0er7kJKhMP7w4sVpfOGq2OuetFIlw/edit#gid=0"
+);
+const sheet = sheets.getSheetByName("Sheet1");
+function doPost(e) {
+  let data = e.parameter;
+  sheet.appendRow([data.name, data.email, data.message]);
+  return ContentService.createTextOutput("Placing");
+}
+
+// https://script.google.com/u/0/home/projects/1Qx7lKHi52eIdR5GHsulItcHlwRbnJnvEDaJC2FKJcqv1OlsDG09T9mr2/edit
+
+// Deployment ID
+// AKfycbxXx7bezlBpWAT0hULH6MRF2Y-Vlm63ol6D6tiTwdHXWjlb879fzPZz36XsfvLh-zHZ
+// Web app
+// URL
+// https://script.google.com/macros/s/AKfycbxXx7bezlBpWAT0hULH6MRF2Y-Vlm63ol6D6tiTwdHXWjlb879fzPZz36XsfvLh-zHZ/exec

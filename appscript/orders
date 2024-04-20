@@ -1,0 +1,18 @@
+const sheets = SpreadsheetApp.openByUrl(
+  "https://docs.google.com/spreadsheets/d/1rkwkdtnk2MohgxkdYDdz2VxYrHv0cULOYk2oyHSCRSM/edit#gid=0"
+);
+const sheet = sheets.getSheetByName("Sheet1");
+function doPost(e) {
+  let data = e.parameter;
+  sheet.appendRow([data.name, data.email, data.phone, data.orders]);
+  return ContentService.createTextOutput("Placing");
+}
+
+// https://script.google.com/u/0/home/projects/1YwEmHmm-uVojIBX_0PfbT8eACgtGTvBqJuzSXsnpTb-MYJRPx2JIrwYv/edit
+
+// Head Deployment ID
+// AKfycbx0_LakmRmLHWh-jo6ZGg9wNGPRedfSrcpJMwr_GWk
+// Web app
+// URL
+// // https://script.google.com/macros/s/AKfycbx0_LakmRmLHWh-jo6ZGg9wNGPRedfSrcpJMwr_GWk/dev
+// "https://script.google.com/macros/s/AKfycbwcM76CRAHtX0U4bo-SMZs1rOIeP6ROU0tJMycrImp2Tt4VpY38RwpclqsaITI9Yu_N/exec"
